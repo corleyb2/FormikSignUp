@@ -1,6 +1,8 @@
 import React from "react";
 import { useFormik } from "formik";
 
+import "./index.css";
+
 // A custom validation function. This must return an object
 // which keys are symmetrical to our values/initialValues
 const validate = (values) => {
@@ -46,7 +48,7 @@ const SignupForm = () => {
       <label htmlFor="firstName">First Name</label>
       <input
         id="firstName"
-        name="lastName"
+        name="firstName"
         type="text"
         onChange={formik.handleChange}
         value={formik.values.firstName}
@@ -59,7 +61,7 @@ const SignupForm = () => {
         name="lastName"
         type="text"
         onChange={formik.handleChange}
-        value={formik.values.email}
+        value={formik.values.lastName}
       />
       {formik.errors.lastName ? <div>{formik.errors.lastName}</div> : null}
 
