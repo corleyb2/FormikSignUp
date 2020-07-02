@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
+import SignupForm from "./SignupForm";
+
 class Square extends React.Component {
   render() {
     return <button className="square">{/* TODO */}</button>;
@@ -44,7 +46,7 @@ class Game extends React.Component {
     return (
       <div className="game">
         <div className="game-board">
-          <Board />
+          <SignupForm />
         </div>
         <div className="game-info">
           <div>{/* status */}</div>
